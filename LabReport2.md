@@ -8,7 +8,7 @@ import java.util.*;
 class Handler implements URLHandler{
     private List<String> messages = new ArrayList<>();
 	public String handleRequest(URI url){
-        if (url.getPath().contains("/add-message")) {
+	if (url.getPath().contains("/add-message")) {
             String query = url.getQuery();
             String[] parameters = query.split("&");
             String[] param1 = parameters[0].split("=");
@@ -42,11 +42,16 @@ class ChatServer {
 ```
 
 ![Image](1.png)
-- The method handleRequest are called
-- The relevant argument to the method handleRequest is URI url, : presents the request URI, which will be something like
-  http://localhost:<port>/add-message?s=mudamudamuda&user=jpolitz. And List<String>=messages.
-- The "messages" list in "handler chanches from Nilloo)"
-- The "messages" list in "handler changes from ["Nilloo: mudamudamuda"]"
-  to ["Nilloo: mudamudamuda", "Jotaro: Oraoraoraora!~"]
+- ***Which methods in your code are called?*** The method handleRequest are called
+- ***What are the relevant arguments to those methods, and the values of any relevant fields of the class?*** The relevant argument to the method handleRequest is URI url,: presents the request URI, which will be something like
+  http://localhost:<port>/add-message?s=mudamudamuda&user=Nilloo. And List<String>=messages.
+- ***How do the values of any relevant fields of the class change from this specific request?*** If no values got changed, explain why. The "messages" list in "handler changes from [] to ["Nilloo: mudamudamuda"]"
 ![Image](2.png)
+- ***Which methods in your code are called?*** The method handleRequest are called
+- ***What are the relevant arguments to those methods, and the values of any relevant fields of the class?*** The relevant argument to the method handleRequest is URI url,: presents the request URI, which will be something like
+  http://localhost:<port>/add-message?s=Oraoraoraora!~&user=Jotaro. And List<String>=messages.
+- ***How do the values of any relevant fields of the class change from this specific request?*** If no values got changed, explain why. The "messages" list in "handler changes from ["Nilloo: mudamudamuda"]" to ["Nilloo: mudamudamuda", "Jotaro: Oraoraoraora!~"]
+
+
+## 
 
