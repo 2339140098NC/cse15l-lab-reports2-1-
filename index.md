@@ -1,1 +1,1 @@
-![image]6.jpeg
+![image](6.jpg)
