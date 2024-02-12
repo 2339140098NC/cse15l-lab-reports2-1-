@@ -55,10 +55,10 @@ class ChatServer {
 
 
 ## Part2
-![Image](3.png)
+![Image](6.png)
 - The absolute path to the private key for your SSH key for logging into ieng6 (on your computer, an EdStem workspace, or on the home directory of the lab computer): `/c/Users/NealC/.ssh`
 
-![Image](4.png)
+![Image](7.png)
 - The absolute path to the public key for your SSH key for logging into ieng6 (this is the one you copied to your account on ieng6, so it should be a path on ieng6's file system):`/home/linux/ieng6/oce/59/necha/.ssh`
 
 ![Image](5.png)
